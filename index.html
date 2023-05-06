@@ -1,0 +1,84 @@
+<!-- 
+1. Create a simple page having a header, main content, and a footer.
+2. Inside the header keep the brand name to the left and all the navigation to the right.
+4. Inside the main content take an article section having two columns. In the first column put a heading and some introductory text of the article and in the second column take an image.
+5. After the article section, take a gallery section, in which there will be two rows and in both the row there will be three columns. Each column must have a different image.
+6. After the gallery section footer will come.
+7. Use flexbox properties and values to create columns.
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog&Gallary</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/5bbf2c826f.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body id="top">
+    <header class="header">
+        <div class="container flex">
+            <a class="brand" href="#">
+                <img class="img" src="https://launchpad.altcampus.school/images/altcampus-logo.svg" alt="altcampus-logo">
+            </a>
+            <nav class="nav">
+                <a href="#">HOME</a>
+                <a href="#">BLOG</a>
+                <a href="#">GALLERY</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <article class="article">
+            <div class="container flex">
+                <div class="col">
+                    <h1>This is our heading</h1>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur</p>
+                </div>
+                <div class="col">
+                    <img class="col-img" src="https://media.istockphoto.com/id/1440121056/photo/aerial-top-view-of-green-autumn-trees-in-forest-in-slovakia-drone-photography-rainforest.jpg?b=1&s=170667a&w=0&k=20&c=PR9pkinX0bIpM-t4GrZ2OMB5ZmTwQDxxAdxfCcPcmpU=" alt="tree">
+                </div>
+            </div>
+        </article>
+        <section class="section">
+            <div class="container">
+            <h2>Gallery</h2>
+            </div>
+            <div class="container flex">
+                <div class="col-1">
+                  <img class="col-1-img" src="https://images.unsplash.com/photo-1506057213367-028a17ec52e5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60" alt="sky">
+                </div>
+                <div class="col-1">
+                    <img  class="col-1-img" src="https://images.unsplash.com/photo-1503965830912-6d7b07921cd1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Nnx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60" alt="dandelion">
+                </div>
+                <div class="col-1">
+                    <img class="col-1-img" src="https://images.unsplash.com/photo-1533208705114-4f6b97d68ab1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTV8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="blaclwood">
+                </div>
+            </div>
+            <div class="container flex">
+                <div class="col-1">
+                  <img class="col-1-img" src="https://media.istockphoto.com/id/1427249962/photo/tropical-leaves-abstract-green-leaf-texture-in-garden-nature-background.jpg?b=1&s=170667a&w=0&k=20&c=40KcV7mbAQWihuO0At8GSOTIKp-TvIoHGIhurHBeUq0=" alt="leaf">
+                </div>
+                <div class="col-1">
+                    <img  class="col-1-img" src="https://media.istockphoto.com/id/1423766661/photo/fit-and-active-mixed-race-retiree-couple-hiking-together.jpg?b=1&s=170667a&w=0&k=20&c=tMvsDot7iDpIFtTD3fEQDi5TsyT85Rt6tSabPHRAJYs=" alt="man">
+                </div>
+                <div class="col-1">
+                    <img class="col-1-img" src="https://images.unsplash.com/photo-1493166228553-4fa0fdb916e8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTh8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="roots">
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+    </footer>
+    <a class="circle"href="#top" >TOP</div>
+</body>
+</html>
